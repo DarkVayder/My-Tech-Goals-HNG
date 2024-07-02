@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>My Tech Goals</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-top-wrapper">
+      <div class="sidebar-top">
+        <a href="#" class="logo__wrapper">
+          <img src="assets/image.jpg" alt="My Dashboard Logo" class="logo">
+          <span class="hide company-name">Dashboard</span>
+        </a>
+      </div>
+      <button class="expand-btn" type="button">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6.00979 2.72L10.3565 7.06667C10.8698 7.58 10.8698 8.42 10.3565 8.93333L6.00979 13.28"
+            stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+    <div class="sidebar-links-wrapper">
+      <div class="sidebar-links">
+        <ul>
+          <li>
+            <a href="#dashboard" title="Dashboard">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                class="icon icon-tabler icons-tabler-filled icon-tabler-layout-dashboard">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M9 3a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-6a2 2 0 0 1 2 -2zm0 12a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-2a2 2 0 0 1 2 -2zm10 -4a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-6a2 2 0 0 1 2 -2zm0 -8a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-2a2 2 0 0 1 2 -2z" />
+              </svg>
+              <span class="link hide">My Tech-Goals</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+    <div class="sidebar__profile">
+      <div class="avatar__wrapper">
+        <img class="avatar" src="assets/image.jpg" alt="Profile Picture" data-testid="slackProfilePicture">
+        <div class="online__status"></div>
+      </div>
+      <div class="avatar__name hide">
+        <div class="user-name" data-testid="slackDisplayName">Nasir Rabiu</div>
+        <div class="email" data-testid="slackEmail">@mrabiu321</div>
+      </div>
+      <svg class="logout" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="icon icon-tabler icons-tabler-outline icon-tabler-logout">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
+        <path d="M9 12h12l-3 -3" />
+        <path d="M18 15l3 -3" />
+      </svg>
+    </div>
+  </nav>
+
+  <main>
+    <section class="content">
+      <h1>My Tech Goals</h1>
+      <p>Here are my goals for the next 2 years:</p>
+      <ul>
+        <li>Master React.js and Next.js for building advanced web applications.</li>
+        <li>Become proficient in TypeScript to enhance JavaScript development.</li>
+        <li>Contribute significantly to open-source projects to build a strong portfolio.</li>
+        <li>Learn and implement modern state management libraries such as Redux Toolkit or Zustand.</li>
+        <li>Develop expertise in GraphQL for efficient data querying and manipulation.</li>
+        <li>Acquire skills in server-side rendering and static site generation.</li>
+        <li>Gain deep knowledge of Tailwind CSS for building highly responsive and visually appealing UIs.</li>
+        <li>Learn and implement advanced algorithms and data structures.</li>
+        <li>Stay updated with the latest trends and advancements in the frontend ecosystem through continuous learning and experimentation.</li>
+        <li>Integrate CI/CD pipelines for automated testing and deployment of web applications.</li>
+      </ul>
+      <div class="time-info">
+        <p>Current Time in UTC: <span id="currentTimeUTC" data-testid="currentTimeUTC"></span></p>
+        <p>Current Day of the week: <span id="currentDay" data-testid="currentDay"></span></p>
+      </div>
+      <div class="links">
+        <a href="https://hng.tech/learn" data-testid="hngLink">HNG Tech Learn</a>
+        <a href="https://keyword.dog" data-testid="keywordLink">Keyword Dog</a>
+        <a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink">Scrape Any Web</a>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
